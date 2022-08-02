@@ -1,0 +1,444 @@
+@charset "UTF-8";
+
+
+body{
+    background: #f3f3f3;
+}
+#hdSpace {
+    height: 90px;
+    position: relative;
+}
+body .member-header {
+    min-width: 190px;
+}
+.member-header {
+    background-color: rgba(0,0,0,.97);
+    padding: 0 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+}
+#hd {
+    min-width: 1020px;
+}
+#hd {
+    height: 70px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 135px;
+    max-width: 1130px;
+}
+#hd .logo {
+    position: absolute;
+    left: 45px;
+    top: 0;
+    text-decoration: none;
+    padding: 18px 0;
+    font-size: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 118px;
+}
+#hd .logo .svg-icon-netflix-logo {
+    fill: #e50914;
+}
+body #hd .last {
+    width: auto!important;
+}
+#hd .account-secondary-navigation {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    line-height: 70px;
+}
+#account-tools {
+    float: right;
+    height: 70px;
+}
+#profileSelector {
+    height: 70px;
+    cursor: pointer;
+    font-size: 12px;
+    position: relative;
+    outline: 0;
+}
+#profileSelector .current-profile {
+    padding: 0 45px 0 0;
+}
+#account-tools .current-profile {
+    font-weight: 700;
+}
+#profileSelector .current-profile .avatar {
+    margin: 5px;
+    width: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+img {
+    border: 0;
+}
+#account-tools .current-profile>.profile-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    margin-left: 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#profileSelector .trigger {
+    /* visibility: hidden; */
+ /*    opacity: 0; */
+    display:none;
+    bottom: 0;
+    top: inherit;
+    left: 11px;
+    width: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #e5e5e5;
+    border-top: 0;
+    position: absolute;
+    margin-top: -3px;
+    right: 15px;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    transition: opacity .2s;
+}
+#profileSelector .profiles-container {/*드롭다운*/
+	display:none;
+    position: absolute;
+    width: 156px;
+    left: -56px;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    transition: opacity .2s;
+}
+ul.structural>li {
+    list-style: none;
+    margin-left: 0;
+}
+#profileSelector .profiles {
+    overflow: hidden;
+    height: auto;
+    background-color: rgba(0,0,0,.97);
+    border-top: solid 2px #e5e5e5;
+    position: relative;
+}
+ul.structural {
+    padding: 0;
+    margin: 0;
+}
+#profileSelector .profile {
+    overflow: hidden;
+    padding: 10px 5px 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#profileSelector .profile a {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+#profileSelector a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 10px;
+    line-height: 32px;
+}
+#profileSelector .profile img {
+    float: left;
+    margin-right: 10px;
+    width: 32px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+img {
+    border:0;
+}
+#account-tools .name {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+#profileSelector .profile-manage {
+    background-color: rgba(0,0,0,.97);
+}
+#profileSelector .manage {
+    margin-bottom: 0;
+    padding: 10px 5px 10px 0;
+}
+#profileSelector #accountLinks {
+    padding-bottom: 0;
+}
+#profileSelector .links {
+    overflow: hidden;
+    background-color: rgba(0,0,0,.97);
+}
+#profileSelector .links a {
+    padding: 0 10px;
+}
+#profileSelector .links li[data-uia=profiles-sign-out-link] {
+    text-align: center;
+    border-top: solid 1px rgba(255,255,255,.25);
+    margin-bottom: 0;
+    padding: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*-------이메일 변경-------------*/
+.bd {
+    margin: 20px 30px 0;
+  }
+  
+  .responsive-account-container {
+    font-size: 1em;
+    max-width: 1024px;
+    width: 95%;
+  }
+  .responsive-account-container {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    color: #333;
+    display: block;
+    font-size: 1em;
+    margin: 0 auto;
+    min-height: 400px;
+    min-width: 300px;
+    overflow-wrap: anywhere;
+    position: relative;
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 2.15em;
+    margin: 0 0 0.55em;
+    color: #333;
+    /* font-size: 1.5em; */
+    font-weight: 400;
+    margin: 0 0 0.4em;
+  }
+  
+  .nfFormSpace:first-of-type {
+    margin-top: 1.5em;
+  }
+  ul.structural>li {
+    list-style: none;
+    margin-left: 0;
+  }
+  .nfFormSpace {
+    margin-bottom: 2em;
+  }
+  .nfInput, .nfInput .nfInputPlacement {
+    position: relative;
+  }
+  .nfInput .nfTextField {/*이메일 박스 두개*/
+    height: 48px;
+    padding: 10px 10px 0;
+    width: 100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .nfTextField:disabled {/*현재 이메일*/
+    color: #a6a6a6;
+    border : 1px solid #ccc;
+  }
+  .nfInput .hasText+.placeLabel, .nfInput .nfTextField:focus+.placeLabel {
+    font-size: 11px;
+    top: 4px;
+    transform: translateY(0);
+    
+  }
+  .nfTextField:valid{/*새 이메일*/
+    border : 1px solid #333;
+
+  }
+  .nfInput .placeLabel {
+    color: #8c8c8c;
+    font-size: 14px;
+    left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: font .1s ease,top .1s ease,transform .1s ease;
+  }
+  .nfInput {
+      max-width: 500px;
+      position: relative;
+  }
+
+
+
+
+  /*저장 취소 버튼*/
+  .change-email-buttons {
+    margin-top: 2.25em;
+  	
+  }
+  .change-email-buttons .nf-btn {
+    margin: 0 10px 0 0;
+    margin: 10px 0;
+  }
+
+  .nf-btn.nf-btn-small { 
+    display: inline-block;
+    font-size: 13px;
+    padding: 0.75rem 17.33333333px;
+    min-width: 98px;
+    min-height: 37px;
+    margin-right: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: auto;
+    line-height: 1rem;
+    border-radius: 4px;
+    border: none;
+  }
+  .nf-btn-small:hover{
+      opacity: 0.5;
+      }
+
+
+ .nf-btn-secondary{ /*취소*/
+     background-color: #ccc; 
+ }
+  .nfTextField:focus {
+    border-color: #0071eb;
+    outline: 0;
+}
+  .nf-btn-retro.nf-btn-primary {
+    background-color: #0f84fa;
+    color: #fff;
+    padding: 13px 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+  
+
+/*-------------------*/
+    
+
+
+
+/*-------*/
+
+.site-footer-wrapper {
+    min-width: 190px;
+    width: 100%;
+    margin-top: 80px;
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: #757575;
+    position: relative;
+}
+.footer-divider {
+    border-top: 1px solid #e6e6e6;
+}
+.site-footer {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 90%;
+}
+.footer-top {
+    padding: 0;
+    margin: 0 0 30px;
+}
+.footer-top-a {
+    color: #757575;
+}
+.footer-links {
+    max-width: 1000px;
+    font-size: 13px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-table;
+}
+.footer-link-item {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 25%;
+    padding-right: 12px;
+    vertical-align: top;
+}
+.footer-link {
+    color: #757575;
+    text-decoration:none;
+}
+.footer-link:hover{
+	text-decoration:underline;
+	color:#757575;
+}
+.service-code-wrapper {
+    color: #757575;
+    margin: 45px 0 20px;
+}
+.service-code {
+    border: 1px solid #757575;
+    padding: 8px;
+    display: inline-block;
+    color: #757575;
+    font-size: .8521em;
+    min-width: 90px;
+    text-align: center;
+}
+.pointer {
+    cursor: pointer;
+}
+.copy-text {
+    color: grey;
+    margin: 20px 0;
+    font-size: .75em;
+    line-height: 1em;
+}
+.copy-text {
+    color: grey;
+    margin: 20px 0;
+    font-size: .75em;
+    line-height: 1em;
+}
+.copy-text .copy-text-block+.copy-text-block {
+    margin-top: 4px;
+}
+.copy-text-block:hover{
+	text-decoration:underline;
+	color:#757575;
+}
+

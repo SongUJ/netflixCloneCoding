@@ -1,0 +1,445 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}	
+	
+body {
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	margin: 0;
+	word-break: keep-all;
+}
+
+.basicLayout {
+	min-height: 100vh;
+}
+
+.basicHeader {
+	width: 100%;
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #fff;
+	height: 90px;
+	position: relative;
+}
+
+.svg-nfLogo-signupBasicHeader {
+	margin-left: 3%;
+	text-decoration: none;
+    vertical-align: middle;
+    fill: #e50914;
+    display: inline-block;
+    line-height: 90px;
+}
+		
+.svg-icon-netflix-logo {
+	height: 45px;
+    width: 167px;
+    vertical-align: middle;
+}
+
+.procedure-netflix-logo{
+
+}
+		
+.signupBasic-onboarding-header {
+	margin: 0 3%;
+	float: right;
+    color: #333;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 90px;
+    text-decoration: none;
+}
+		
+.procedure-simpleContainer {
+	padding-bottom: 95px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+  	/* height: 930px; */
+	min-height: 500px;
+}
+	
+.procedure-imagestepLogo {
+	display: inline-block;
+	text-align: center;
+	/* height: 214px; */
+}
+
+.procedure-regSteplogo {
+	margin: 100px 0 20px;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Checkmark.png) no-repeat 50% 50%;
+	background-size: 50px;
+	text-align: center;	
+}
+
+.procedure-stepHeaderBox {
+	display: inline-block;
+	height: 75px;
+  	width: 282px;
+}
+
+.stepIndicator {
+    /* width: 330px; */
+ 	font-size: 13px;
+  	display: block;
+  	line-height: 19px;
+  	text-align: center;
+}
+
+.stepTitle {
+	/* width: 340px; */
+    /* height: 86px; */
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 13px;
+}
+
+.contextBody {
+	margin-top: 15px;
+    margin-bottom: 20px;
+    height: 165px;
+    width: 300px;
+    font-size: 18px;
+ 	display: inline-block;
+  	text-align: left;
+  	/* margin-left: 17px; */
+}
+
+.submitBtnContainer {
+	width: 340px;
+	margin-top: 24px;
+	margin: 0 auto;
+}
+
+.submit-button1 {
+	min-height: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 4px;
+    line-height: 1;
+    color: #fff;
+    background-color: #e50914;
+    /* width: 343px; */
+    width: 100%;
+    margin-top: -15px;
+    margin-left: 13px;
+    border: none;
+}
+
+.site1-footer-center {
+	background-color: #f3f3f3;
+	width: 100%;
+	padding-bottom: 20px;
+	opacity: 1;
+	height: 345px;
+}
+
+.footer-divider-greyline {
+	border-top: 1px solid #e5e5e5;
+}
+	
+.footer-site-center-section {
+	margin: 0 auto;
+    padding-top: 30px;
+    width: 90%;
+    height: 293px;
+}
+
+.footer-top-1 {
+	padding: 0;
+	margin: 0 0 30px;
+	color: #757575;
+}
+
+.footer-top-1-a {
+   	color: #757575;
+   	text-decoration: none;
+   	font-weight: 500;
+}
+    
+.footer-link-top-2  {
+	padding: 0;
+	margin: 5px;
+	max-width: 1000px;
+	font-size: 13px;
+	box-sizing: border-box;
+	color: #757575;
+	list-style: none;
+	
+}
+    
+.footer-link-top-2-item {
+   	margin-left: -4px;
+   	box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 25%;
+    padding-right: 12px;
+    vertical-align: top;
+}
+    
+.footer-link-top-2-font  {
+	color: #757575;
+	text-decoration: none;
+	
+}
+    
+.contextBody > div:nth-child(1) {
+	width: 100%;
+	height: 50px;
+}
+	
+.contextBody > div:nth-child(2) {
+	margin-top: 20px;
+	width: 100%;
+	height: 50px;
+}
+
+.contextBody > div:nth-child(3) {
+	margin-top: 20px;
+	width: 100%;
+	height: 25px;
+}
+	
+.checkmark-group {
+	margin-bottom: 20px;
+   	margin-top: 15px;
+   	text-align: left;
+}
+
+.checkmark-group-icon {
+	color: #e50914;
+}
+
+.checkmark-group-text {
+	margin-left: 10px;
+	margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.nfSelectPlacement:after {
+	background-color: #fff;
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    border: 6px solid;
+    border-color: #333 #fff #fff #fff;
+    right: 10px;
+    top: 49%;
+}
+
+.lang-selection-container5 {
+	display: inline-block;
+	color: #757575;
+}
+
+.infooter-selectarrow {
+	position: relative;
+   	max-width: 500px;
+   	display: inline-block;
+   	width: 100%;
+   	font-size: 1em;
+   	color: #757575;
+}
+
+.nflang-select {
+    color: inherit;
+    padding-left: 42px;
+    background: #fff;
+    font-size: 16px;
+    height: 48px;
+    border: 1px solid #a6a6a6;
+    appearance: none;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px 30px 12px 10px;
+    text-transform: none;
+    -webkit-box-direction: normal;
+}
+
+.copy-text-5 {
+    color: #757575;
+    margin: 20px 0;
+    font-size: .75em;
+    line-height: 1em;
+}
+
+.copy-text-block-5 {
+	margin-top: 4px;
+    color: #757575;
+    /* margin: 20px 0; */
+    font-size: 13px;
+    line-height: 1em;
+}
+
+.checkmark-group > svg {
+	display:block;
+	float: left;
+	
+}
+
+.checkmark-group > span {
+	display:block;
+	float: left;
+	margin-left:10px;
+	width:266px;
+}
+
+.procedure-paymentContainer {
+	width: 504px;
+    height: 473px;
+    box-sizing: border-box;
+	text-align: center;
+    /* padding: 20px 32px 60px; */
+	margin: 0 auto;
+	padding-left:4px;
+}
+	
+.procedure-paymentContainer .stepLogo {
+	margin: 40px 0;
+    display: inline-block;
+    background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Lock.png) no-repeat 50% 50%;
+    text-align: center;
+    width: 50px;
+    background-size: 50px;
+    height: 50px;
+}
+
+.procedure-paymentContainer .contextRowFirst {
+	font-size: 18px;
+	text-align: center;
+	word-break: keep-all;
+	color: rgb(51,51,51);
+	width: 205px;
+	margin: 0 auto;
+}
+
+.procedure-paymentContainer .contextRowSecond {
+	font-size: 18px;
+	text-align: center;
+	word-break: keep-all;
+	color: rgb(51,51,51);
+	font-weight: 700;		
+	width: 205px;
+	margin: 10px auto 0;
+}
+
+.procedure-paymentContainer .divSecurity {
+	margin-top: 20px;
+    margin-right: -2px;
+	height: 16px;
+	float: right;
+}
+
+.procedure-paymentContainer .divSecurity > span {
+	font-size: 13px;
+    height: 14px;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: rgb(51,51,51);
+}
+
+.procedure-paymentContainer .divSecurity > #secure-server-icon {
+	height: 16px;
+    margin-left: 2px;
+    width: 16px;
+}
+
+.procedure-paymentContainer .btnGrey {
+	display: block;
+    color: #333;
+   	font-size: 16px;
+   	height: 64px;
+   	box-sizing: border-box;
+   	text-align: left;
+   	line-height: 60px;
+	margin: 5px 0;
+  	border: 2px solid #ccc;
+  	padding-left: 15px;
+	cursor: pointer;
+}
+
+.procedure-paymentContainer .btnGrey > div:nth-child(2) {
+	margin-left: 14px;
+	margin-top: 7px;   	
+}
+
+.procedure-paymentContainer .btnGrey > div:nth-child(3) {
+	width: 19px;
+	height: 19px;
+	margin-left: 41px;
+	margin-top: 21px;   	
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+	background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/reg_selection/chevron_060915_2.svg);
+}
+
+.procedure-paymentContainer .btnGrey:last-child > div:nth-child(3) {
+   	margin-left: 326px;
+}	
+
+.procedure-paymentContainer .btnGrey:not(:last-child) > div > .logoIcon {
+    height: 25px;
+    margin: 3px 3px 1px 0;  	
+}
+   	
+.procedure-paymentContainer .btnGrey:last-child > div > .logoIcon {
+    height: 25px;
+    margin: 3px 3px 1px 2px;  	
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}

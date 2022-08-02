@@ -1,0 +1,457 @@
+@charset "UTF-8";
+@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 100;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 300;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 400;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 700;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 800;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 900;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+		}	
+	
+		body {
+			font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+			margin: 0;
+			word-break: keep-all;
+		}
+		.basicLayout {
+			min-height: 100vh;
+		}
+		.basicHeader {
+			width: 100%;
+			border-bottom: 1px solid #e6e6e6;
+			background-color: #fff;
+			height: 90px;
+			position: relative;
+		}
+		.svg-nfLogo-signupBasicHeader {
+			/* margin-left: 3%; */
+			text-decoration: none;
+		    vertical-align: middle;
+		    fill: #e50914;
+		    display: inline-block;
+		    line-height: 90px;
+		}
+		.svg-icon-netflix-logo {
+			height: 45px;
+		    width: 167px;
+		    vertical-align: middle;
+		}
+		.procedure-netflix-logo{
+		
+		}
+		.signupBasic-onboarding-header {
+			margin: 0 3%;
+			float: right;
+		    color: #333;
+		    font-weight: 700;
+		    font-size: 19px;
+		    line-height: 90px;
+		    text-decoration: none;
+		}
+		/*.procedure-simpleContainer {
+			padding-bottom: 95px;
+		    width: 100%;
+		    background-color: #fff;
+		    margin: 0 auto;*/
+    		/* height: 930px; */
+   		    min-height: 500px;
+	/*	}*/
+/* 		.procedure-centerContainer {
+			padding: 20px 32px 60px;
+			display: block;
+			margin: 0 auto 15px;
+			max-width: 978px;
+			box-sizing: border-box;
+			height: 550px;
+		} */
+		.procedure-imagestepLogo {
+			display: inline-block;
+			text-align: center;
+			/* height: 214px; */
+		}
+		.procedure-regSteplogo {
+			margin: 100px 0 20px;
+			display: block;
+			width: 50px;
+			height: 50px;
+			background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Checkmark.png) no-repeat 50% 50%;
+			background-size: 50px;
+			text-align: center;	
+		}
+		.procedure-stepHeaderBox {
+			display: inline-block;
+			height: 75px;
+    		width: 282px;
+		}
+		.stepIndicator {
+		    /* width: 330px; */
+    		font-size: 13px;
+    		display: block;
+    		line-height: 19px;
+    		text-align: center;
+		}
+		.stepTitle {
+			/* width: 340px; */
+		    /* height: 86px; */
+		    display: inline-block;
+		    font-size: 32px;
+		    font-weight: 700;
+		    text-align: center;
+		    margin: 0 auto;
+		    margin-bottom: 13px;
+		}
+		.contextBody {
+			margin-top: 15px;
+		    margin-bottom: 20px;
+		    height: 165px;
+		    width: 300px;
+		    font-size: 18px;
+    		display: inline-block;
+    		text-align: left;
+    		/* margin-left: 17px; */
+		}
+		.submitBtnContainer {
+			width: 340px;
+			margin-top: 24px;
+			margin: 0 auto;
+		}
+		.submit-button1 {
+			min-height: 64px;
+		    font-weight: 500;
+		    font-size: 24px;
+		    border-radius: 4px;
+		    line-height: 1;
+		    color: #fff;
+		    background-color: #e50914;
+		    /* width: 343px; */
+		    width: 100%;
+		    margin-top: -15px;
+		    margin-left: 13px;
+		    border: none;
+		}
+		.site1-footer-center {
+			background-color: #f3f3f3;
+			width: 100%;
+			padding-bottom: 20px;
+			opacity: 1;
+			height: 345px;
+		}
+		.footer-divider-greyline {
+			border-top: 1px solid #e5e5e5;
+		}
+		.footer-site-center-section {
+			margin: 0 auto;
+		    padding-top: 30px;
+		    width: 90%;
+		    height: 293px;
+	    }
+	    .footer-top-1 {
+		    padding: 0;
+	   		margin: 0 0 30px;
+	   		color: #757575;
+	    }
+	    .footer-top-1-a {
+	    	color: #757575;
+	    	text-decoration: none;
+	    	font-weight: 500;
+	    }
+	    .footer-link-top-2 {
+	    	padding: 0;
+    		margin: 5px;
+    		max-width: 1000px;
+    		font-size: 13px;
+    		box-sizing: border-box;
+    		color: #757575;
+    		list-style: none;
+    		
+	    }
+	    .footer-link-top-2-item {
+	    	margin-left: -4px;
+	    	box-sizing: border-box;
+		    padding: 0;
+		    margin-bottom: 16px;
+		    display: inline-block;
+		    min-width: 100px;
+		    width: 25%;
+		    padding-right: 12px;
+		    vertical-align: top;
+	    }
+	    .footer-link-top-2-font {
+		    color: #757575;
+	    	text-decoration: none;
+	    }
+		.basicHeader {
+			width: 984px;
+			margin: 0 auto;
+		}
+		.procedure-simpleContainer {
+			width: 984px;
+		    margin: 0 auto;
+		    padding: 20px 32px 168px;
+		    height: 577px;
+		    
+		}
+		.procedure-congratContainer {
+			padding-top: 25px;
+			/* width: 436px; */
+			width: 429px;
+			height: 270px;
+			box-sizing: border-box;
+			margin: 0 auto;
+			text-align: left;
+			float: left;
+		}
+		.procedure-congratContainer .orderFinalTitle {
+			font-size: 38px;
+			margin: 0 0 0.4em;
+		} 
+		.procedure-congratContainer .section {
+			/* font-size: 19px; */
+			font-size: 16px;
+			color: rgb(51,51,51);
+		}
+		.submitBtnContainer {
+			float: right;    
+			width: 436px;
+		}
+		.submitBtnContainer > button {
+		    height: 48px;
+    		width: 100%;
+    		min-height: initial;
+    		font-weight: 400;
+		    font-size: 17px;
+		    border-radius: 2px;
+		    line-height: 1;
+		    margin-left: initial;
+		    margin-top: 45px;
+		}
+		.rightnameBox {
+			margin-right: 0;
+			margin-top: 21px;
+		}
+		.procedure-congratContainer2 {
+			-webkit-box-flex: 1;
+    		flex-grow: 1;
+    		/* width: 45%; */
+    		width: 500px;
+			float: right;
+	/*		min-width: 500px;*/
+   			/* margin-left: 60px; */
+    		padding-top: 25px;
+		}
+		.addprofile-form {
+			margin-right: 0;
+			margin-top: 21px;
+		}
+		.Myprofile-header {
+			margin: 0 0 8px -36px;
+			font-size: 16px;
+    		text-shadow: 0 0 1px rgb(0 0 0 / 30%);
+		}
+		.simpleform-Structual-form {
+			margin-top: 0;
+			margin: 20px 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.netflix-spaceForm {
+			list-style: none;
+    		margin-left: 0;
+    		margin-bottom: 10px;
+		}
+		.ownName-container {
+			max-width: initial;
+			position: relative;
+		}
+		.inputPlacement {
+			position: relative;
+		}
+		.inputPlacement:before {
+			transform: scale(1);
+    		left: -38px;
+    		top: 20px;
+    		content: url(https://assets.nflxext.com/ffe/siteui/acquisition/adaptiveOnramp/addProfiles/owner.svg);
+    		position: absolute;
+		}
+		.input_id {
+		
+		}
+		.nfTextField-hasText {
+			height: 60px;
+			border-color: #5fa53f;
+			padding: 10px 10px 0;
+    		width: 100%;
+    		box-shadow: none;
+    		box-sizing: border-box;
+		    font-size: 16px;
+		    border: solid 1px #8c8c8c;
+		    border-radius: 2px;
+    		display: block;
+    		appearance: none;
+    		color: #000;
+		}
+		.placeLabel-Name {
+			top: 6px;
+		    font-weight: 700;
+		    font-size: 13px;
+		    transform: translateY(0);
+		    position: absolute;
+		    left: 10px;
+    		color: #8c8c8c;
+
+		}
+		.profile-header-add {
+			margin-top: 24px;
+			margin: 0 0 8px -36px;
+			font-size: 16px;
+    		text-shadow: 0 0 1px rgb(0 0 0 / 30%);
+		}
+		.simpleform-Add-profile {
+			margin-top: 0;
+			margin: 20px 0;
+			box-sizing: border-box;
+		}
+		.nformSpace-Inputname {
+			margin-left: 0;
+			margin-bottom: 10px;
+		}
+		.nfinputResponsive {
+			max-width: initial;
+			position: relative;
+		}
+		.addInputPlacement-9 {
+			position: relative;
+		}
+		.addInputPlacement-9:before {
+			content: url(https://assets.nflxext.com/ffe/siteui/acquisition/adaptiveOnramp/addProfiles/add.svg);
+			transform: scale(1);
+		    left: -38px;
+		    top: 20px;		
+		    position: absolute;
+		}
+		.nfTextField-9 {
+			height: 60px;
+			border-color: #5fa53f;
+			padding: 10px 10px 0;
+    		width: 100%;
+    		box-shadow: none;
+    		box-sizing: border-box;
+		    font-size: 16px;
+		    border: solid 1px #8c8c8c;
+		    border-radius: 2px;
+    		display: block;
+    		appearance: none;
+    		color: #000;
+		}
+		
+		.sharingRulesbtn {
+			line-height: 24px;
+    		padding: 16px 24px;
+    		margin-left: 0;
+    		background-color: #eeefef;
+    		border-radius: 2px;
+    		font-size: 14px;
+    		border: none;
+    		text-align: left;
+		}
+		.primary-nf-btn-solid {
+			float:right;
+			width: initial;
+		    min-width: initial;
+		    font-size: 16px;
+		    padding: 12px 74px;
+		    height: initial;
+		    min-height: 48px;
+   			font-weight: 400;
+   			border-radius: 2px;
+    		line-height: 1;
+    		margin-left: auto;
+    		margin-top: 24px;
+    		color: #fff;
+    		background-color: #e50914;
+    		position: relative;
+    		display: inline-block;
+    		text-decoration: none;
+    		vertical-align: middle;
+    		cursor: pointer;
+    		letter-spacing: .025rem;
+    		user-select: none;
+    		text-align: center;
+    		box-sizing: border-box;
+   			border: none;
+   			box-shadow: 0 1px 1px rgb(0 0 0 / 25%);
+		}
+		.copy-text-5 {
+		    color: #757575;
+		    margin: 20px 0;
+		    font-size: .75em;
+		    line-height: 1em;
+		}
+		.copy-text-block-5 {
+			margin-top: 4px;
+		    color: #757575;
+		    /* margin: 20px 0; */
+		    font-size: 13px;
+		    line-height: 1em;
+		}
+		.procedure-congratContainer > h1.orderFinalTitle {
+	    font-size: 40px;
+	    font-weight: 800;
+	    margin-top: -6px;
+		}
+		.procedure-congratContainer2 ul.simpleform-Add-profile {
+			padding-inline-start: 0;
+		}
+		.procedure-congratContainer2 ul.simpleform-Structual-form {
+			margin-top: -2px;
+		}
+		.procedure-congratContainer2 li.nformSpace-Inputname {
+			list-style-type: none;
+		}
+		.procedure-congratContainer2 h2.profile-header-add {
+			margin-top: 55px;
+		    color: rgb(51,51,51);
+		}
+		.procedure-congratContainer2 input.nfTextField-hasText:focus, input.nfTextField-9:focus {
+			border: 1px solid #0071EB !important;
+			outline: none !important;
+		}
+		.procedure-congratContainer2 .sharingRulesbtn {
+			width: 100%;
+		}
+		.procedure-congratContainer2 button[type="submit"] {
+			float: right;
+		}

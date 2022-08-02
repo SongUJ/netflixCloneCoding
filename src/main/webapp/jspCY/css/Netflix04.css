@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+	
+body {
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	margin: 0;
+    word-break: keep-all;
+}
+
+.basicLayout {
+	min-height: 100vh;
+}
+
+.basicHeader {
+	width: 100%;
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #fff;
+	height: 90px;
+	position: relative;
+}
+
+.svg-nfLogo-signupBasicHeader {
+	margin-left: 3%;
+	text-decoration: none;
+    vertical-align: middle;
+    fill: #e50914;
+    display: inline-block;
+    line-height: 90px;
+}
+
+.svg-icon-netflix-logo {
+	height: 45px;
+    width: 167px;
+    vertical-align: middle;
+}
+
+.signupBasic-onboarding-header {
+	margin: 0 3%;
+	float: right;
+    color: #333;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 90px;
+    text-decoration: none;
+}
+
+.procedure-simpleContainer {
+	padding-bottom: 95px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+  	height: 930px;
+}
+
+.procedure-centerContainer {
+	box-sizing: border-box;
+    overflow: hidden;
+    max-width: 978px;
+    display: block;
+    --layout-container-side-padding: 32px;
+    padding: 20px 32px 60px;
+    transform: none;
+    opacity: 1;
+    transition-duration: 250ms;
+    margin: 0 auto 15px;
+}
+
+.procedure-regContainer {
+	text-align: left;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.procedure-imagestepLogo {
+	display: inline-block;
+	text-align: center;
+	height: 214px;
+}
+
+.procedure-regSteplogo {
+	margin: 100px 0 20px;
+	width: 260px;
+	display: block;
+	height: 90px;
+	background: black;
+	background-size: 260px;
+	text-align: center;
+}
+
+.procedure-stepHeaderBox {
+	display: inline-block;
+	height: 75px;
+  	width: 282px;
+}
+
+.stepIndicator {
+    width: 330px;
+  	font-size: 13px;
+  	display: block;
+  	line-height: 19px;
+  	text-align: left;
+}
+
+.stepTitle {
+	width: 330px;
+    height: 34px;
+    display: inline-block;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 0;
+}
+.contextBody {
+	margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    max-width: 300px;
+  	display: inline-block;
+  	text-align: left;
+  	margin-left: 17px;
+}
+
+.submitBtnContainer {
+	margin: 0 auto;
+	margin-top: 24px;
+}
+
+.submit-button1 {
+	min-height: 64px;
+    font-weight: 500;
+    font-size: 24px;
+    border-radius: 4px;
+    line-height: 1;
+    color: #fff;
+ 	background-color: #e50914;
+ 	width: 100%;
+ 	border: none;
+}
+
+.site1-footer-center {
+	background-color: #f3f3f3;
+	width: 100%;
+	padding-bottom: 20px;
+	opacity: 1;
+	height: 345px;
+}
+
+.footer-divider-greyline {
+	border-top: 1px solid #e5e5e5;
+}
+
+.footer-site-center-section {
+	margin: 0 auto;
+    padding-top: 30px;
+    width: 90%;
+    height: 293px;
+}
+
+.footer-top-1 {
+    padding: 0;
+  	margin: 0 0 30px;
+  	color: #757575;
+}
+
+.footer-top-1-a {
+   	color: #757575;
+   	text-decoration: none;
+   	font-weight: 500;
+}
+
+.footer-link-top-2 {
+   	padding: 0;
+  	margin: 5px;
+  	max-width: 1000px;
+  	font-size: 13px;
+  	box-sizing: border-box;
+  	color: #757575;
+  	list-style: none;
+}
+
+.footer-link-top-2-item {
+   	margin-left: -4px;
+   	box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 25%;
+    padding-right: 12px;
+    vertical-align: top;
+}
+
+.footer-link-top-2-font {
+    color: #757575;
+   	text-decoration: none;
+}
+
+.stepHeader-container {
+   	margin-top: 20px;
+  	width: 440px;
+}
+
+.stepIndicator {
+    text-align: inherit;
+  	font-size: 13px;
+  	display: block;
+  	line-height: 19px;
+}
+
+.stepTitle {
+   	font-size: 32px;
+   	display: inline-block;
+  	font-weight: 700;
+  	width: 440px;
+    height: 86px;
+    margin-bottom: 13px;
+}
+
+.simpleForm-structural {
+   	margin: 16px 0 20px;
+}
+
+.contextRow {
+   	font-size: 18px;
+  	color: #333;
+}
+
+.nfFormSpace {
+   	list-style: none;
+  	margin-left: 0;
+  	margin-bottom: 10px;
+}
+
+div.simpleForm-structural {
+	margin-top: 16px;
+	min-height: 250px;
+	margin-bottom: 20px;
+}
+
+div.simpleForm-structural > div {
+	margin-bottom: 10px;
+}
+
+div.simpleForm-structural > div:nth-child(1) {
+	height: 60px;
+	position: relative;
+}
+
+div.simpleForm-structural > div:nth-child(1) > input {
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	box-sizing: border-box;
+	height: 60px;
+	width: 440px;
+	padding: 10px 10px 0 10px;
+	border: 1px solid rgb(95, 165, 63);
+	font-size: 16px;
+	font-weight: 400;
+	color: black;
+}
+
+div.simpleForm-structural > div:nth-child(1) > label {
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	color: rgb(140,140,140);
+	font-size: 13px;
+	font-weight: 700;
+}
+
+div.simpleForm-structural > div:nth-child(2) {
+	min-height: 60px;
+	position: relative;
+}
+
+div.simpleForm-structural > div:nth-child(2) > input {
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	box-sizing: border-box;
+	height: 60px;
+	width: 440px;
+	padding: 10px 10px 0 10px;
+	font-size: 16px;
+	font-weight: 400;
+	color: black;
+}
+
+div.simpleForm-structural > div:nth-child(2) > input.error {
+	border: 1px solid rgb(185, 45, 43);
+}
+
+div.simpleForm-structural > div:nth-child(2) > input.okay {
+	border: 1px solid rgb(95, 165, 63);
+}
+
+div.simpleForm-structural > div:nth-child(2) > label {
+	color: rgb(140,140,140);
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	font-size: 16px;
+	transform: translateY(-50%);
+}
+
+div.simpleForm-structural > div:nth-child(2) > label.small {
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	color: rgb(140,140,140);
+	font-size: 13px;
+	font-weight: 700;
+	transform: initial;
+}
+	
+div.simpleForm-structural > div:nth-child(2) > div.error {
+	font-size: 13px;
+    color: #b92d2b;
+}
+
+div.simpleForm-structural > div:nth-child(3),
+div.simpleForm-structural > div:nth-child(4) {
+	height: 50px;
+	box-sizing: border-box;
+   	padding-left: 36px;
+}
+
+div.simpleForm-structural > div:nth-child(3) > input,
+div.simpleForm-structural > div:nth-child(4) > input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+div.simpleForm-structural > div:nth-child(3) > label,
+div.simpleForm-structural > div:nth-child(4) > label {
+	position: relative;
+    margin: 8px 0;
+    padding: 6px 0;
+    display: block;
+    line-height: 1.2;
+    font-size: 16px;
+}
+
+div.simpleForm-structural > div:nth-child(3) > label > span > a {
+    text-decoration: none;
+    color: #0071eb;		
+}
+
+div.simpleForm-structural > div:nth-child(3) > label > span:before, 
+div.simpleForm-structural > div:nth-child(4) > label > span:before {
+    width: 25px;
+    height: 25px;
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: -36px;
+    padding: 0;
+    border: 1px solid;
+    background-color: #fff;
+}
+
+div.simpleForm-structural > div:nth-child(3) > label.checked > span:after,
+div.simpleForm-structural > div:nth-child(4) > label.checked > span:after {
+	display: block;
+    position: absolute;
+    top: 7px;
+    left: -32px;
+    height: 6px;
+    width: 14px;
+    color: #0071eb;
+    content: "";
+    border-bottom: 4px solid;
+    border-left: 4px solid;
+    transform: rotate(-45deg);	
+}

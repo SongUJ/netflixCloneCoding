@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+		
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}	
+	
+body {
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	margin: 0;
+	word-break: keep-all;
+}
+
+.basicLayout {
+	min-height: 100vh;
+}
+
+.basicHeader {
+	width: 100%;
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #fff;
+	height: 90px;
+	position: relative;
+}
+
+.svg-nfLogo-signupBasicHeader {
+	/* margin-left: 3%; */
+	text-decoration: none;
+    vertical-align: middle;
+    fill: #e50914;
+    display: inline-block;
+    line-height: 90px;
+}
+
+.svg-icon-netflix-logo {
+	height: 45px;
+    width: 167px;
+    vertical-align: middle;
+}
+
+.signupBasic-onboarding-header {
+	margin: 0 3%;
+	float: right;
+    color: #333;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 90px;
+    text-decoration: none;
+}
+
+.basicHeader {
+	width: 984px;
+	margin: 0 auto;
+}
+
+img {
+	position: fixed;
+	/* padding-bottom: 95px; */
+	margin: 0 auto;
+	width: 100%;
+	height: 1386px;
+	/*background-image: background: linear-gradient to bottom(rgba(255,255,255,0)10%);*/
+	background-size: cover;
+	background-position: center;
+	opacity: 0.5; 		
+}
+
+.member-series-movie {
+	position: relative;
+	top: 540px;
+	font-weight: 700;
+	color: #333;
+	font-size: 30px;
+	/* padding: 568px 300px; */
+	text-align: center;
+}

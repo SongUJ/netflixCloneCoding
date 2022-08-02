@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}	
+
+body {
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	margin: 0;
+	/*height: 2000px;*/
+	background: black;
+	color: white;
+}
+
+.page2-login-background {
+	background-color: transparent;
+	color: #fff;
+	height: 100%;
+}
+
+.page2-login-background > div {
+	min-height: 80%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 0;
+}
+
+.page2-login-background > div > div {
+	background-size: cover;
+    display: block;
+  /*height: 100%;*/
+    min-height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    /*opacity: .5;*/
+    border-radius: 5px;
+}
+
+.page2-login-background > div > div > img {
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.page2-login-header {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-bottom: transparent;
+    background: linear-gradient(to bottom,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%);
+    height: 90px;
+}
+
+.svg-nfLogo.signupBasicHeader {
+    /*text-decoration: none;
+    vertical-align: middle;*/
+	margin-left: 3%;
+	fill: #e50914;
+	display: inline-block;
+	line-height: 90px;
+}
+
+.svg-icon.svg-icon-netflix-logo {
+    height: 45px; 
+    width: 167px;
+    vertical-align: middle;
+} 
+
+#netflix-logo {
+
+
+}
+
+#page2-login-blackbox {
+	margin: 0 auto -236px;
+    min-height: 100vh;
+    /* background-color: transparent; */
+    max-width: 308px;
+    padding: 0 5%;
+    /*color: #333;*/
+}
+
+.login-black-container {
+	min-height: 660px;
+	padding: 60px 68px 40px;
+	background-color: rgba(0,0,0,.75);
+	margin-bottom: 90px;
+}
+
+.login-blackbox-container {
+	position: relative;
+    top: 0;
+    left: 0;
+    background-color: black;
+    min-height: 100px;
+    height: 500px;
+}
+
+.login-blackbox-signup {
+	width: 353px;
+	min-height: 660px;
+	padding: 60px 68px 40px;
+	margin-bottom: 90px;
+	background-color: rgba(0,0,0,.75);
+	margin: 0;
+}
+
+.login-form-main-textbox {
+	-webkit-flex-grow: 1;
+	border-radius: 4px;
+    border: 0;
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 16px 20px 0;
+}
+
+.login-page-title {
+	color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.login-page-input-allbox {
+	margin-bottom: 0;
+}
+
+.login-send-email-container {
+	padding-bottom: 16px;
+	
+}
+
+.nfTextfield-error {
+    padding: 16px 20px 0;
+    /* color: #fff; */
+    background: #333;
+    width: 314px;
+    height: 50px;
+    border-radius: 4px;
+    border: 0;
+}
+
+.placeLabel-id {
+	left: 87px;
+    font-size: 16px;
+    position: absolute;
+    top: 168px;
+    color: #8c8c8c;
+}
+
+.login-send-pw-container {
+	padding-bottom: 16px;
+	
+}
+
+.placeLabel-pw {
+	left: 87px;
+    font-size: 16px;
+    position: absolute;
+    top: 248px;
+    color: #8c8c8c;
+}
+
+.login-nfbtn {
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 700;
+	color: white;
+	margin: 24px 0 12px;
+	padding: 16px;
+	background: #e50914;
+	line-height: 1em;
+	max-width: 100%;
+	width: 100%;
+}
+
+.login-remember-me {
+	flex-grow: 1;
+	padding-left: 20px;
+	position: relative;  
+    box-sizing: border-box;
+    user-select: none;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.remember-me-information {
+	margin-left: -16px;
+}
+
+.rememberMe_true:before {
+	background: #737373;
+    border-radius: 2px;
+    border: 0;
+    height: 16px;
+    left: -20px;
+    width: 16px;
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2px;
+    padding: 0;
+}
+
+.fl_l {
+	float: left;
+}
+
+.fl_r {
+	float: right;
+}
+
+.link-login-help-link {
+	cursor: pointer;
+	color: #b3b3b3;
+	font-size: 13px;
+    font-weight: 500;
+    padding-top: 2px;
+}
+
+.login-signup-now {
+	color: #737373;
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 88px;
+}
+
+.site-footer-centered {
+	margin-top: 0;
+	background: rgba(0,0,0,.75);
+	min-width: 190px;
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 1em;
+    color: #757575;
+    position: relative;
+}
+
+.site-footer-ceter-content {
+	color: #757575;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 30px 0;
+	width: 90%;
+}
+
+.footer-top-question {
+	padding: 0;
+  	margin: 0 0 30px;
+}
+
+.footer-top-telephone {
+	color: #757575;
+}

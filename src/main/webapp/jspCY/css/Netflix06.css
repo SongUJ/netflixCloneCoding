@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 100;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 300;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 400;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 700;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 800;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+		}
+		
+		@font-face {
+		    font-family: 'Netflix Sans';
+		    font-weight: 900;
+		    font-display: optional;
+		    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+		}	
+	
+		body {
+			font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+			margin: 0;
+			word-break: keep-all;
+		}
+		.basicLayout {
+			min-height: 100vh;
+		}
+		.basicHeader {
+			width: 100%;
+			border-bottom: 1px solid #e6e6e6;
+			background-color: #fff;
+			height: 90px;
+			position: relative;
+		}
+		.svg-nfLogo-signupBasicHeader {
+			margin-left: 3%;
+			text-decoration: none;
+		    vertical-align: middle;
+		    fill: #e50914;
+		    display: inline-block;
+		    line-height: 90px;
+		}
+		.svg-icon-netflix-logo {
+			height: 45px;
+		    width: 167px;
+		    vertical-align: middle;
+		}
+		.procedure-netflix-logo{
+		
+		}
+		.signupBasic-onboarding-header {
+			margin: 0 3%;
+			float: right;
+		    color: #333;
+		    font-weight: 700;
+		    font-size: 19px;
+		    line-height: 90px;
+		    text-decoration: none;
+		}
+		.procedure-simpleContainer {
+			padding-bottom: 95px;
+		    width: 100%;
+		    background-color: #fff;
+		    margin: 0 auto;
+    		height: 930px;
+		}
+		.procedure-regContainer {
+			/* max-width: 340px; */
+			width: 340px;
+		    height: 550px;
+			text-align: center;
+		    padding: 20px 32px 60px;
+			margin: 0 auto;
+		    box-sizing: border-box;
+		}
+		.procedure-imagestepLogo {
+			display: inline-block;
+			text-align: center;
+			/* height: 214px; */
+		}
+		.procedure-regSteplogo {
+			margin: 100px 0 20px;
+			display: block;
+			width: 50px;
+			height: 50px;
+			background: url(https://assets.nflxext.com/ffe/siteui/acquisition/simplicity/Checkmark.png) no-repeat 50% 50%;
+			background-size: 50px;
+			text-align: center;	
+		}
+		.procedure-stepHeaderBox {
+			display: inline-block;
+			height: 75px;
+    		width: 282px;
+		}
+		.stepIndicator {
+    		font-size: 13px;
+    		display: block;
+    		line-height: 19px;
+		}
+		.stepTitle {
+		    height: 86px;
+		    display: inline-block;
+		    font-size: 32px;
+		    font-weight: 700;
+		    margin: 0 auto;
+		    margin-bottom: 13px;
+		}
+		.contextBody {
+			margin-top: 15px;
+		    margin-bottom: 20px;
+		    height: 165px;
+		    width: 300px;
+		    font-size: 18px;
+    		display: inline-block;
+    		text-align: left;
+		}
+		.submitBtnContainer {
+			width: 340px;
+			margin-top: 24px;
+			margin: 0 auto;
+		}
+		.submit-button1 {
+			min-height: 64px;
+		    font-weight: 500;
+		    font-size: 24px;
+		    border-radius: 4px;
+		    line-height: 1;
+		    color: #fff;
+		    background-color: #e50914;
+		    width: 100%;
+		    margin-top: -15px;
+		    margin-left: 13px;
+		    border: none;
+		}
+		.site1-footer-center {
+			background-color: #f3f3f3;
+			width: 100%;
+			padding-bottom: 20px;
+			opacity: 1;
+			height: 345px;
+		}
+		.footer-divider-greyline {
+			border-top: 1px solid #e5e5e5;
+		}
+		.footer-site-center-section {
+			margin: 0 auto;
+		    padding-top: 30px;
+		    width: 90%;
+		    height: 293px;
+	    }
+	    .footer-top-1 {
+		    padding: 0;
+	   		margin: 0 0 30px;
+	   		color: #757575;
+	    }
+	    .footer-top-1-a {
+	    	color: #757575;
+	    	text-decoration: none;
+	    	font-weight: 500;
+	    }
+	    .footer-link-top-2 {
+	    	padding: 0;
+    		margin: 5px;
+    		max-width: 1000px;
+    		font-size: 13px;
+    		box-sizing: border-box;
+    		color: #757575;
+    		list-style: none;
+    		
+	    }
+	    .footer-link-top-2-item {
+	    	margin-left: -4px;
+	    	box-sizing: border-box;
+		    padding: 0;
+		    margin-bottom: 16px;
+		    display: inline-block;
+		    min-width: 100px;
+		    width: 25%;
+		    padding-right: 12px;
+		    vertical-align: top;
+	    }
+	    .footer-link-top-2-font {
+		    color: #757575;
+	    	text-decoration: none;
+	    }
+	    .nfSelectPlacement:after {
+			background-color: #fff;
+		    content: '';
+		    position: absolute;
+		    pointer-events: none;
+		    border: 6px solid;
+		    border-color: #333 #fff #fff #fff;
+		    right: 10px;
+		    top: 49%;
+		}
+		.lang-selection-container5 {
+			display: inline-block;
+			color: #757575;
+		}
+		.infooter-selectarrow {
+			position: relative;
+	    	max-width: 500px;
+	    	display: inline-block;
+	    	width: 100%;
+	    	font-size: 1em;
+	    	color: #757575;
+		}
+		.nflang-select {
+		    color: inherit;
+		    padding-left: 42px;
+		    background: #fff;
+		    font-size: 16px;
+		    height: 48px;
+		    border: 1px solid #a6a6a6;
+		    appearance: none;
+		    border-radius: 2px;
+		    width: 100%;
+		    padding: 10px 30px 12px 10px;
+		    text-transform: none;
+		    -webkit-box-direction: normal;
+		}
+		.copy-text-5 {
+		    color: #757575;
+		    margin: 20px 0;
+		    font-size: .75em;
+		    line-height: 1em;
+		}
+		.copy-text-block-5 {
+			margin-top: 4px;
+		    color: #757575;
+		    /* margin: 20px 0; */
+		    font-size: 13px;
+		    line-height: 1em;
+		}
+		.procedure-regContainer {
+			box-sizing: content-box;
+			width:946px;
+			height:753px;
+			padding:20px 16px 60px;
+			margin-top:4px;
+		}
+		.procedure-regContainer > div:nth-child(1) {
+			height: 78px;
+			padding: 0 16px;
+			margin-bottom: -5px;
+		}
+		.procedure-regContainer > div:nth-child(2) {
+			padding: 0 16px;
+		}
+		
+		#stepHeader-container {
+			height:79px;
+			padding:0 16px;
+		}
+		.ta-left {
+			text-align: left;
+		}
+		.checkmark-group {
+			margin:4px 0 32px;	
+			height:87px;
+		}
+		.checkmark-group > div {
+			height: 25px;
+			margin-top: 6px;
+			position: relative;
+		}
+		.checkmark-group > div:nth-child(1) {
+		
+		}
+		.checkmark-group > div:nth-child(2) {
+		
+		}
+		.checkmark-group > div:nth-child(3) {
+		
+		}
+		.checkmark-group svg {
+		    position: absolute;
+		}
+		.checkmark-group svg > path {
+			fill: #e50914;
+		}
+		.checkmark-group span {
+		    position: absolute;
+		    left: 35px;
+		    top: 0;
+			font-size: 18px;
+		}
+		.planLabel {
+			width:189px;
+			height:120px;
+			text-align: center;
+		    line-height: 120px;
+	        position:relative;
+		}
+		.planLabel > span {
+		    padding: 1px;
+		    background: #e50914;
+		    color: #fff;
+		    font-weight: 700;
+		    opacity: .6;
+		    border-radius: 2px;
+		    font-size: 17px;
+		    margin: 0 auto;
+		    box-sizing: border-box;
+		    width:120px;
+		    height:120px;
+	        display: inline-block;
+		}
+		.planLabel.on > span {
+		    opacity: 1;
+		}
+		.planLabel.on > img {
+			position: absolute;
+			top: 120px;
+		    left: 34px;
+		}
+		.planLabel:not(.on) > img {
+			display: none;
+		}
+		#div_table {
+			margin-top:151px;
+			height: 243px;
+			padding: 12px 0 10px;
+			box-sizing: border-box;
+		}
+		#div_table > div {
+			height: 60px;
+			line-height: 39px;
+		}
+		#div_table > div:not(:last-child) {
+			border-bottom: 1px solid #ccc;
+		}
+		#div_table > div > div {
+			box-sizing: border-box;
+		}
+		#div_table > div > div:first-child {
+			width: 413px;
+			height: 100%;
+			float:left;
+		}
+		#div_table > div > div:not(:first-child) {
+			width: 120px;
+			height: 100%;
+			float:left;
+			padding:12px 16px;
+			color: #737373;
+			font-weight: 700;
+		}
+		#div_table > div > div:nth-child(2), #div_table > div > div:nth-child(3) {
+			margin-right: 69px;
+		}
+		#div_table > div > div:nth-child(2):not(.on), #div_table > div > div:nth-child(3):not(.on), #div_table > div > div:nth-child(4):not(.on) {
+			color: #737373;
+			fill: #737373;		
+		}
+		#div_table > div > div:nth-child(2).on, #div_table > div > div:nth-child(3).on, #div_table > div > div:nth-child(4).on {
+			color: #e50914;
+			fill: #e50914;		
+		}
+		#div_table .check {
+			margin-top:6px;
+		}
+		#div_table .check svg {
+			width: 26px;
+			height: 26px;
+		}
+		.price, .quality, .resolution, .check {
+			text-align:center;
+		}
+		.fl {
+			float:left;
+		}
+		.fr {
+			float:right;
+		}
+		.addpadding {
+			padding: 12px 16px;
+		}
+		.planGrid-standardDisclaimer {
+			padding: 0 150px 0 16px;
+		    color: #737373;
+		    font-size: 13px;
+		    display: block;
+		}
+		.planGrid-standardDisclaimer2 {
+			margin-top: 10px;
+			padding: 0 150px 0 16px;
+		    color: #737373;
+		    font-size: 13px;
+		    display: block;
+		}
+		.next-redButton-6 {
+			padding: 0 16px;
+			margin-top: 24px;
+			text-align: center;
+		    max-width: 440px;
+		    margin: 0 auto;
+		}
+		.nf-btn-solid-red-6 {
+			margin-top: 25px;
+		    position: relative;
+		    min-height: 64px;
+		    font-weight: 500;
+		    font-size: 24px;
+		    border-radius: 4px;
+		    line-height: 1;
+		    padding: 0.75rem 25.33333333px;
+		    min-width: 110px;
+		    width: 100%;
+		    color: #fff;
+		    background-color: #e50914;
+		    border : none;
+		}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+const drawStar = function(target) {
+	console.log(`${target.value}`);
+    document.querySelector(`.star .star-grade`).style.width = `${target.value * 10}%`;
+  }
+</script>
+<style>
+.star {
+  position: relative;
+  font-size: 2rem;
+  color: #ddd;
+}
+  
+.star .star-input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.star .star-grade {
+  width: 0;
+  position: absolute; 
+  left: 0;
+  color: red;
+  overflow: hidden;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+<div class="notice-board">
+                    <div class="title-area">
+                        <div class="title-text"><h2>승리호</h2></div>
+                        <div class="close-icon"><svg style="outline:none; color: white;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon1 Hawkins-Icon-Standard" data-uia="previewModal-closebtn" role="button" aria-label="close" tabindex="0"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.29297 3.70706L10.5859 12L2.29297 20.2928L3.70718 21.7071L12.0001 13.4142L20.293 21.7071L21.7072 20.2928L13.4143 12L21.7072 3.70706L20.293 2.29285L12.0001 10.5857L3.70718 2.29285L2.29297 3.70706Z" fill="currentColor"></path></svg></div>
+                    </div>
+                    <div class="sub-title">
+                        <span class="video-type">영화</span>
+                        <span class="video-year">2020</span>
+                    </div>
+                    <div class="cm-content-wrap">
+                        <div class="grade-text">
+                            평점
+                        </div>
+                        <div class="grade-box">
+                            <div class="user-grade-sum-box">
+                                <h3 style="text-align: center; color: white;">네티즌 평점</h3>
+                                <div style="font-size: 2.6rem; color: black; text-align: center; color: white;">0.0</div>
+                                <form style="text-align: center;" name="myform" id="myform" method="post" action="./save">
+                                    <fieldset>
+                                        <label for="rate1">⭐</label><input type="radio" name="rating" value="1" id="rate1">
+                                        <label for="rate2">⭐</label><input type="radio" name="rating" value="2" id="rate2">
+                                        <label for="rate3">⭐</label><input type="radio" name="rating" value="3" id="rate3">
+                                        <label for="rate4">⭐</label><input type="radio" name="rating" value="4" id="rate4">
+                                        <label for="rate5">⭐</label><input type="radio" name="rating" value="5" id="rate5">
+                                    </fieldset>
+                                </form>
+                                <div style="color: white; text-align: center;">0명 참여</div>
+                            </div>
+                            <div class="age-satisfaction-box">
+                                <h3 style="color: white; text-align: center; border-bottom: solid 1px gray; padding-bottom: 10px;">나이별 만족도</h3>
+                                <div class="graph-box">
+                                    <div style="width: 363px; height: 175px;">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                    <script type="text/javascript">
+                                        var context = document.getElementById('myChart').getContext('2d');
+                                        var myChart = new Chart(context,
+                                                {
+                                                    type : 'bar', // 차트의 형태
+                                                    data : { // 차트에 들어갈 데이터
+                                                        labels : [
+                                                        //x 축
+                                                        '10대', '20대', '30대', '40대', '50대'],
+                                                        datasets : [ { //데이터
+                                                            label : '', //차트 제목
+                                                            fill : false, // line 형태일 때, 선 안쪽을 채우는지 안채우는지
+                                                            data : [ 21, 19, 25, 20, 23 //x축 label에 대응되는 데이터 값
+                                                            ],
+                                                            backgroundColor : [
+                                                            //색상
+                                                            'rgba(255, 99, 132, 0.2)',
+                                                                    'rgba(54, 162, 235, 0.2)',
+                                                                    'rgba(255, 206, 86, 0.2)',
+                                                                    'rgba(75, 192, 192, 0.2)',
+                                                                    'rgba(255, 159, 64, 0.2)' ],
+                                                            borderColor : [
+                                                            //경계선 색상
+                                                            'rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)',
+                                                                    'rgba(255, 206, 86, 1)',
+                                                                    'rgba(75, 192, 192, 1)',
+                                                                    'rgba(255, 159, 64, 1)' ],
+                                                            borderWidth : 1
+                                                        //경계선 굵기
+                                                        } /* ,
+                                                                                {
+                                                                                    label: 'test2',
+                                                                                    fill: false,
+                                                                                    data: [
+                                                                                        8, 34, 12, 24
+                                                                                    ],
+                                                                                    backgroundColor: 'rgb(157, 109, 12)',
+                                                                                    borderColor: 'rgb(157, 109, 12)'
+                                                                                } */
+                                                        ]
+                                                    },
+                                                    options : {
+                                                        scales : {
+                                                            yAxes : [ {
+                                                                ticks : {
+                                                                    beginAtZero : true
+                                                                }
+                                                            } ]
+                                                        }
+                                                    }
+                                                });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cm-content-area">
+                        <div class="netizens-text" style="font-size: 22px; color: white; padding: 20px 0; text-align: center; border-bottom: solid 1px gray;">
+                            관람객 / 네티즌
+                        </div>
+                        <div style="font-size: 22px; color: white; padding: 40px 0 20px 0; text-align: center;">별점을 선택해주세요.</div>
+                        <form style="text-align: center;" name="myform" id="netizens-grade" method="post" action=""> 
+                            <!-- <fieldset class="starpoint-box">
+                                <label for="rate1">⭐</label><input type="radio" name="rating" value="1" id="rate1" class="star-radio">
+                                <label for="rate2">⭐</label><input type="radio" name="rating" value="2" id="rate2" class="star-radio">
+                                <label for="rate3">⭐</label><input type="radio" name="rating" value="3" id="rate3" class="star-radio">
+                                <label for="rate4">⭐</label><input type="radio" name="rating" value="4" id="rate4" class="star-radio">
+                                <label for="rate5">⭐</label><input type="radio" name="rating" value="5" id="rate5" class="star-radio">
+                            </fieldset> -->
+                            <span class="star">
+							  ★★★★★
+							  <span class="star-grade">★★★★★</span>
+							  <input class="star-input" type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+							</span>
+                        </form> 
+                        <div class="cm_form_intro_box"> 
+                            <div class="area_input_box"> 
+                                <input type="text" class="this_input_write" placeholder="감상평을 등록해주세요."> 
+                            </div> 
+                            <button type="submit" class="this_button_write">등록</button> 
+                        </div>
+                        <div class="list-container">
+                            <div class="list-container">
+                            <!-- <h3 class="list-select-box" style="color: white; margin-left: 15px;">최신순</h3> -->
+                           	<!--<i style="color: white;" class="fa fa-chevron-down"></i>  -->
+                           	
+                        	<select class="list-box">
+                            	<option class="new" selected>최신순</option>
+                           	 	<option class="sympathy">공감순</option>
+                           	 	<option class="myComment">내가 작성한 글</option>
+                        	</select>
+                        </div>
+                        </div>
+                        
+                        <div class="comment-all-box">
+                        <%
+                        CommentBoxDao cDao = new CommentBoxDao();
+                        ArrayList<CommentBoxDto> cDto = cDao.userCommentData();
+                        for(CommentBoxDto commentBox : cDto) {
+                        %>
+                            <div class="comment-box" commentId="<%=commentBox.getCommentId() %>">
+                                <div>
+                                    <form name="myform" id="myform3" method="post" action="./save">
+                                        <fieldset id="comment-grade">
+                                            <label for="rate1">⭐</label><input type="radio" name="rating" value="1" id="rate1">
+                                            <label for="rate2">⭐</label><input type="radio" name="rating" value="2" id="rate2">
+                                            <label for="rate3">⭐</label><input type="radio" name="rating" value="3" id="rate3">
+                                            <label for="rate4">⭐</label><input type="radio" name="rating" value="4" id="rate4">
+                                            <label for="rate5">⭐</label><input type="radio" name="rating" value="5" id="rate5">
+                                        </fieldset>
+                                    </form>
+                                    <div class="user-grade">0</div>
+                                </div>
+                                <div>
+                                    <div class="user-comment"><%=commentBox.getUserComment() %></div>
+                                </div>
+                                <div style="margin-bottom: 10px;">
+                                    <div class="user-id"><%=commentBox.getProfileId() %></div>
+                                    <div class="comment-day"><%=commentBox.getCommentDate() %></div>
+                                </div>
+                                <div>
+                                    <div class="cm_sympathy_area" >
+                                        <button type="button" class="area_button_upvote">
+                                            <span class="plus-count"><i class="fa fa-thumbs-up"><%=commentBox.getLikeHitCount() %></i></span>
+                                        </button>
+                                        <button type="button" class="area_button_downvote">
+                                            <span class="mines-count"><i class="fa fa-thumbs-down"><%=commentBox.getUnlikeHitCount() %></i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                			<%
+                        	}
+                        	%> 
+                        </div>
+                        <!-- <div style="display:none;">
+	                        <div class="comment-box-original">
+                                <div>
+                                    <form name="myform" id="myform3" method="post" action="./save">
+                                        <fieldset id="comment-grade">
+                                            <label for="rate1">⭐</label><input type="radio" name="rating" value="1" id="rate1">
+                                            <label for="rate2">⭐</label><input type="radio" name="rating" value="2" id="rate2">
+                                            <label for="rate3">⭐</label><input type="radio" name="rating" value="3" id="rate3">
+                                            <label for="rate4">⭐</label><input type="radio" name="rating" value="4" id="rate4">
+                                            <label for="rate5">⭐</label><input type="radio" name="rating" value="5" id="rate5">
+                                        </fieldset>
+                                    </form>
+                                    <div class="user-grade">0</div>
+                                </div>
+                                <div>
+                                    <div class="user-comment">ㅎ</div>
+                                </div>
+                                <div style="margin-bottom: 10px;">
+                                    <div class="user-id">YG</div>
+                                    <div class="comment-day">2022-06-17</div>
+                                </div>
+                                <div>
+                                    <div class="cm_sympathy_area">
+                                        <button type="button" class="area_button_upvote">
+                                            <span class="plus-count"><i class="fas fa-thumbs-up">0</i></span>
+                                        </button>
+                                        <button type="button" class="area_button_downvote">
+                                            <span class="mines-count"><i class="fas fa-thumbs-down">0<</i></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                    	</div> -->
+                    </div>    
+                </div>
+</body>
+</html>

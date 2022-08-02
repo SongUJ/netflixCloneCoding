@@ -1,0 +1,156 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.*"%>
+<%@ page import="com.sns.dao.*"%>
+<%@ page import="com.sns.dto.*"%>
+<%@ page import="java.util.*"%>
+
+
+<%	
+    int loginId = (Integer)(session.getAttribute("profileId")); 	 
+	PostViewDAO postViewDao = new PostViewDAO();	
+
+	ArrayList<ProfileDTO> profileList = postViewDao.viewProfile(loginId);
+			
+		for(ProfileDTO profile : profileList) {
+%>
+<head>
+	<script src="../js/jquery-3.6.0.min.js"></script>
+	<script>
+		$(function (){
+			$(".menu-box2").click(function (){
+				
+			});
+		}); 
+	</script>
+</head>
+
+
+
+	<div id="background_btm" style="display: none;"></div>
+
+	<!-- Modal Dialogs -->
+	<div id="postModal">
+		<div id="post-box" class="modal-stl"
+			style="display: none; background-color: #282828;">
+			<div class="profile-imgbox">
+				<div class="box" style="background: #141414">
+					<img class="profile" src="../images/<%=profile.getProfileImg()%>" />
+					<%  }  %>
+				</div>
+			</div>
+			<div class="post-container">
+				<div class="post-container2">
+					<div class="postingbox">
+
+						<form action="../FileUploadServlet" method="post" enctype="multipart/form-data">
+									<textarea class="autosize" onkeydown="resize(this)"
+											onkeyup="resize(this)" name="content"
+											placeholder="무슨 일이 일어나고 있나요?" style="background-color:#282828"></textarea>
+						
+										<script>
+						                function resize(obj) {
+						                  obj.style.height = "1px";
+						                  obj.style.height = (12+obj.scrollHeight)+"px";
+						                }
+						                </script>
+						                <input type="file" name="file"/>
+
+										<div class="posting-bottom ">
+											<div>
+												<div class="ps-button postButton">
+													<input type="submit" value="posting"
+														style="background-color: transparent; color: white; border: none; font-size: 20px; line-height: 19px;">
+												</div>
+											</div>
+									</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+
+
+
+	<!-- 댓글 모달창 -->
+	<div class="modal-commBox">
+		<div class="comm-box modal-stl"
+			style="display: none; background-color: #282828;">
+			<div class="profile-imgbox">
+				<div class="box" style="background: #141414">
+					<%
+			
+			for(ProfileDTO profile : profileList) {
+	
+ 			 %>
+
+
+					<img class="profile" src="../images/<%=profile.getProfileImg()%>" />
+					<% } %>
+				</div>
+			</div>
+			<div class="post-container">
+				<div class="post-container2">
+					<div class="postingbox">
+						<form action="CommentsAct.jsp">
+							<textarea class="autosize" onkeydown="resize(this)"
+								onkeyup="resize(this)" placeholder="포스팅에 대한 당신의 생각을 전하세요."
+								name="comments" style="background-color: #282828;"></textarea>
+
+							<script>
+			                  function resize(obj) {
+			                    obj.style.height = "1px";
+			                    obj.style.height = 12 + obj.scrollHeight + "px";
+			                  }
+			                </script>
+
+							<input type="hidden" name="post_id" id="hidden_bno" />
+
+							<div class="posting-bottom">
+								<div>
+									<div class="ps-button postButton" !important
+										style="padding: 10px 10px; margin-left: 380px">
+
+										<input type="submit" value="답글"
+											style="border: none; outline: none;">
+
+									</div>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header>
+		<!-------------------- 좌측 메뉴바--------------- -->
+		<div class="menu-container">
+			<div class="imagebox imgButton">
+				<img style="cursor:pointer;" src="../images/netflix1.png " !important style="margin: 0"
+					onClick="location.href='../index.jsp?profile_id=<%=loginID %>'" />
+			</div>
+			<div class="menu-box1 menuButton" onClick="location.href='Main.jsp'">
+				<i class="fa-solid fa-house"></i><span>&nbsp;&nbsp; 홈</span>
+			</div>
+			<div id="meun-box2" class="menu-box2 menuButton" onClick="location.href='Trend.jsp?profileID=<%=loginId %>'">
+				<i class="fa-solid fa-hashtag"></i><span>&nbsp;&nbsp; 탐색하기</span>
+			</div>
+			<div class="menu-box3 menuButton" onClick="location.href='Notice.jsp?profileID=<%=loginId %>'"> 
+				<i class="fa-solid fa-bell"></i> <span>&nbsp;&nbsp; 알림</span>
+			</div>
+			<div class="menu-box4 menuButton"
+				onClick="location.href='Message.jsp?profileID=<%=loginId %>'">
+				<i class="fa-solid fa-envelope"></i><span>&nbsp;&nbsp; 쪽지</span>
+			</div>
+			<div class="menu-box5 menuButton" onClick="location.href='Profile.jsp?member_id=<%=loginId %>&profile_id=<%=loginId %>'"> 
+				<i class="fa-solid fa-user"></i><span>&nbsp;&nbsp; 프로필</span>
+			</div>
+			<div id="modal-btn" class="post-button postButton">posting</div>
+
+		</div>
+	</header>
